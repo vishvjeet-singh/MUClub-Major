@@ -45,16 +45,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="admin.jsp"><i class="fa-solid fa-building-columns"></i> admine</a>
+          <a class="nav-link " aria-current="page" href="admin.jsp" target="_blank"><i class="fa-solid fa-building-columns"></i> admine</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="studentLogin.jsp"><i class="fa-solid fa-graduation-cap"></i> Student</a>
+          <a class="nav-link " aria-current="page" href="studentLogin.jsp" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Student</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="facultyLogin.jsp"><i class="fa-solid fa-chalkboard-user"></i> faculty</a>
+          <a class="nav-link " aria-current="page" href="facultyLogin.jsp" target="_blank"><i class="fa-solid fa-chalkboard-user"></i> faculty</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="index.jsp">enroll</a>
+          <a class="nav-link " aria-current="page"  href="index.jsp">enroll</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " aria-current="page" href="index.jsp">home</a>

@@ -28,12 +28,20 @@
 			<div class="col-md-4 offset-md-4">
 				<div class="card shadow">
 					<div class="card-body">
-						<p class="fs-4 text-center">Student Login</p>
+						<p class="fs-4 text-center">user Register</p>
 
 						<form action="adminLogin" method="post">
 							<div class="mb-3">
 								<label class="form-label">Email address</label> <input required
 									name="email" type="email" class="form-control">
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Dipartment</label> <input required
+									name="name" type="text" class="form-control">
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Full name</label> <input required
+									name="name" type="text" class="form-control">
 							</div>
 
 							<div class="mb-3">
@@ -42,7 +50,7 @@
 							</div>
 
 							<button type="submit" class="btn  text-black col-md-12"
-								style="border: #FF5300; border-radius: 6px; border-style: inset;">Login</button>
+								style="border: #FF5300; border-radius: 6px; border-style: inset;">Register</button>
 						</form>
 			<br> <p>Don't have an account? <a href="signup.jsp" class="link-info text-decoration-none">Create one</a></p>
 						

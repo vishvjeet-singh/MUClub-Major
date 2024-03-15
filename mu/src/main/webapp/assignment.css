@@ -309,7 +309,7 @@ margin: auto;
     .poster{
         display: flex;
         flex-direction: row-reverse;
-        padding: 130px 40px;
+        padding: 150px 40px;
         position: relative;
     }
     .poster > div{
@@ -514,3 +514,5 @@ flex-direction: column;
 } */
 
 /* another slider */
+
+/*login page css */
