@@ -34,12 +34,12 @@
 						<p class="fs-4 text-center">User Register</p>
 						
 						<c:if test="${not empty sucMsg }">
-						<p class="text-center text-success fs-4 "> ${sucMsg} </p>
+						<p class="text-center text-success fs-5 "> ${sucMsg} </p>
                          <c:remove var="sucMsg" scope="session"/>
 						</c:if>
 						
 						<c:if test="${not empty errMsg }">
-						<p class="text-center text-danger fs-4 "> ${errMsg} </p>
+						<p class="text-center text-danger fs-5 "> ${errMsg} </p>
                          <c:remove var="errMsg" scope="session"/>
 						</c:if>
 

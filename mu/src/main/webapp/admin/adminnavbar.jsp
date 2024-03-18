@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<title>Insert title here</title>
 
-<%@include file="allcss.jsp"%>
+<%@include file="/components/allcss.jsp"%>
 <link rel="stylesheet" href="../assignment.css" />
 <title>navbar</title>
 <style>
@@ -41,11 +43,12 @@
 
 
 	<nav
-		class="navbar navbar-expand-lg navbar-light bg-light fixed-top paint-card">
+		class="navbar navbar-expand-lg navbar-light bg-light fixed-top paint-card"
+		style="padding-right: 30px">
 		<div class="navm container-fluid">
 			<div>
-				<img src="images/Icons/mulogo1.png" alt="mu-logo"
-					class="herader_logo" style="height: 50px;" />
+				<img src="mulogo1.png" alt="mu-logo" class="herader_logo"
+					style="height: 50px;" />
 			</div>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -55,27 +58,38 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item "><a class="nav-link text-dark "
+					<li class="nav-item"><a class="nav-link text-dark"
 						aria-current="page" href="admin.jsp" target="_blank"><i
-							class="fa-solid fa-building-columns"></i> admine</a></li>
-					<li class="nav-item"><a class="nav-link text-dark"
-						aria-current="page" href="studentLogin.jsp" target="_blank"><i
-							class="fa-solid fa-graduation-cap"></i> Student</a></li>
-					<li class="nav-item"><a class="nav-link text-dark"
-						aria-current="page" href="facultyLogin.jsp" target="_blank"><i
-							class="fa-solid fa-chalkboard-user"></i> faculty</a></li>
-					<li class="nav-item"><a class="nav-link text-dark"
-						aria-current="page" href="index.jsp">enroll</a></li>
+							class="fa-solid fa-house-chimney-user"></i> Home</a></li>
 					<li class="nav-item"><a class="nav-link text-dark "
-						aria-current="page" href="index.jsp">home</a></li>
-					<li class="nav-item"><a class="nav-link text-dark"
-						aria-current="page" href="index.jsp#card">clubs</a></li>
-		
+						aria-current="page" href="studentLogin.jsp" target="_blank"><i
+							class="fa-solid fa-chalkboard-user"></i> President</a></li>
+					<li class="nav-item"><a class="nav-link text-dark "
+						aria-current="page" href="facultyLogin.jsp" target="_blank"><i
+							class="fa-solid fa-graduation-cap"></i> Students</a></li>
+				</ul>
+				<div class="dropdown text-center">
+					<button
+						style="border: none; padding: 7px 7px; border-radius: 8px; border: 2px solid rgb(235, 73, 14);"
+						class="btn  dropdown-toggle" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">Dropdown</button>
+					
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+						>
+						<li><a class="dropdown-item  " href="#">Change Password</a></li>
+						<li><a class="dropdown-item" href="#">Logout</a></li>
+					</ul>
+
+
+				</div>
 			</div>
+
+
+
 		</div>
 	</nav>
 
 
 </body>
 </html>
-

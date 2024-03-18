@@ -8,6 +8,13 @@ public class user {
 	private String dipartment;
 	private String password;
 	
+	
+	
+	public user() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getId() {
 		return id;
 	}
