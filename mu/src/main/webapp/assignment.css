@@ -57,12 +57,11 @@ align-items: center;
   position: relative;
   max-width : 300px;
   height : 225px;  
-  background-color : #fff;
-/*  margin : 110px 10px;
-*/  
-  padding : 30px 15px;
+  background-color : #fff; 
+  padding : 30px 25px;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 40px;
   display : flex;
   flex-direction : column;
   box-shadow : 0 5px 20px rgba(0,0,0,0.5);

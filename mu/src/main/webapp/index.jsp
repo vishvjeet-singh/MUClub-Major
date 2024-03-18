@@ -1,3 +1,5 @@
+<%@page import="com.db.DBConnection"%>
+<%@page import="java.sql.Connection"%>
 <html lang="en">
 
 <head>
@@ -14,6 +16,7 @@
 
 <body>
 	<%@include file="components/navbar.jsp"%>
+	
 
 	<header>
 		<!-- <div >
@@ -84,7 +87,6 @@
 			</div>
 
 		</section>
-
 
 
 
@@ -302,7 +304,7 @@
 					</div>
 					<div class=content>
 						<h3 class="color">Outreach Fitness Club</h3>
-						<a href="clubs/club13.jsp">
+						<a href="club13.jsp">
 
 							<button
 								style="border: none; padding: 7px 7px; border-radius: 8px; border: 2px solid rgb(235, 73, 14);"

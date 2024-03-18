@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page isELIgnored = "false" %>
+	     	
 <!DOCTYPE html>
 <html>
 
@@ -28,31 +31,40 @@
 			<div class="col-md-4 offset-md-4">
 				<div class="card shadow">
 					<div class="card-body">
-						<p class="fs-4 text-center">user Register</p>
+						<p class="fs-4 text-center">User Register</p>
+						
+						<c:if test="${not empty sucMsg }">
+						<p class="text-center text-success fs-4 "> ${sucMsg} </p>
+                         <c:remove var="sucMsg" scope="session"/>
+						</c:if>
+						
+						<c:if test="${not empty errMsg }">
+						<p class="text-center text-danger fs-4 "> ${errMsg} </p>
+                         <c:remove var="errMsg" scope="session"/>
+						</c:if>
 
-						<form action="adminLogin" method="post">
+						<form action="user_register" method="post">
+							
 							<div class="mb-3">
 								<label class="form-label">Email address</label> <input required
 									name="email" type="email" class="form-control">
 							</div>
 							<div class="mb-3">
-								<label class="form-label">Dipartment</label> <input required
-									name="name" type="text" class="form-control">
+								<label class="form-label">Full Name</label> <input required
+									name="fullname" type="text" class="form-control">
 							</div>
 							<div class="mb-3">
-								<label class="form-label">Full name</label> <input required
-									name="name" type="text" class="form-control">
+								<label class="form-label">Dipartment</label> <input required
+									name="dipartment" type="text" class="form-control">
 							</div>
 
 							<div class="mb-3">
 								<label class="form-label">Password</label> <input required
 									name="password" type="password" class="form-control">
 							</div>
-
 							<button type="submit" class="btn  text-black col-md-12"
 								style="border: #FF5300; border-radius: 6px; border-style: inset;">Register</button>
 						</form>
-			<br> <p>Don't have an account? <a href="signup.jsp" class="link-info text-decoration-none">Create one</a></p>
 						
 						
 					</div>

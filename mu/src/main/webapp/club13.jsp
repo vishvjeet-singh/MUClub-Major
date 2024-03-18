@@ -14,10 +14,10 @@ padding: 25px 15px;
 </style>
     <link rel="icon" type="image/x-icon" href="images/Icons/mulogo2.jfif">
 <link rel="stylesheet" href="assignment.css" />
-<%@include file="/components/allcss.jsp"%>
+<%@include file="components/allcss.jsp"%>
 </head>
 <body>
-	<%@include file="/components/navbar.jsp"%>
+	<%@include file="components/navbar.jsp"%>
 	 <!-- <img src="logomu.png" alt="image" > -->
 	 <div class="bg">
 	 
