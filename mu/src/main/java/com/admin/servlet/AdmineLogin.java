@@ -12,6 +12,8 @@ import javax.servlet.http.HttpSession;
 import com.entity.user;
 
 
+
+
 @WebServlet("/adminLogin")
 public class AdmineLogin extends HttpServlet {
 
@@ -38,7 +40,6 @@ public class AdmineLogin extends HttpServlet {
 
 			
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 		

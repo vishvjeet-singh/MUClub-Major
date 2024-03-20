@@ -16,7 +16,7 @@
 
 <body>
 	<%@include file="components/navbar.jsp"%>
-	
+
 
 	<header>
 		<!-- <div >
@@ -318,7 +318,7 @@
 		</section>
 
 
-		
+
 
 		<!-- <section id="card" class="boxes">
 			<div class="box">
@@ -424,68 +424,81 @@
 			<div class="Expereince">
 				<div class="exchild">
 					<div class="Us h6 center">Club activities</div>
-					
-					
-					
-					
+
+
+
+
 					<section class="p-4">
 
-			<div id="carouselExampleIndicators" class="carousel slide "
-				data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleIndicators"
-						data-bs-slide-to="0" class="active" aria-current="true"
-						aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators"
-						data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators"
-						data-bs-slide-to="2" aria-label="Slide 3"></button>
-						<button type="button" data-bs-target="#carouselExampleIndicators"
-						data-bs-slide-to="3" aria-label="Slide 4"></button>
-						<button type="button" data-bs-target="#carouselExampleIndicators"
-						data-bs-slide-to="4" aria-label="Slide 5"></button>
-						<button type="button" data-bs-target="#carouselExampleIndicators"
-						data-bs-slide-to="5" aria-label="Slide 6"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="images/corouselimg/spandhan.jpg" class="d-block w-100 h-75 alt="..." >
-					</div>
-					<div class="carousel-item">
-						<img src="images/corouselimg/sports.jpg" class="d-block w-100 h-75" alt="...">
-					</div>
-					<div class="carousel-item">
-						<img src="images\corouselimg\fashionshow.jpg" class="d-block w-100 h-75" alt="...">
-					</div>
-					<div class="carousel-item">
-						<img src="images\corouselimg\aagman.jpg" class="d-block w-100 h-75" alt="...">
-					</div>
-					<div class="carousel-item">
-						<img src="images\corouselimg\spandhan1.jpg" class="d-block w-100 h-75" alt="...">
-					</div>
-					<div class="carousel-item">
-						<img src="images/corouselimg/sports.jpg" class="d-block w-100 h-75" alt="...">
-					</div>
-					<div class="carousel-item ">
-						<img src="images\corouselimg\fashionshow.jpg" class="d-block w-100 h-75" alt="...">
-					</div>
-					
-				</div>
-				<button class="carousel-control-prev" type="button"
-					data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button"
-					data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
+						<div id="carouselExampleIndicators" class="carousel slide "
+							data-bs-ride="carousel">
+							<div class="carousel-indicators">
+								<button type="button"
+									data-bs-target="#carouselExampleIndicators"
+									data-bs-slide-to="0" class="active" aria-current="true"
+									aria-label="Slide 1"></button>
+								<button type="button"
+									data-bs-target="#carouselExampleIndicators"
+									data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button"
+									data-bs-target="#carouselExampleIndicators"
+									data-bs-slide-to="2" aria-label="Slide 3"></button>
+								<button type="button"
+									data-bs-target="#carouselExampleIndicators"
+									data-bs-slide-to="3" aria-label="Slide 4"></button>
+								<button type="button"
+									data-bs-target="#carouselExampleIndicators"
+									data-bs-slide-to="4" aria-label="Slide 5"></button>
+								<button type="button"
+									data-bs-target="#carouselExampleIndicators"
+									data-bs-slide-to="5" aria-label="Slide 6"></button>
+							</div>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="images/corouselimg/spandhan.jpg"
+										class="d-block w-100 h-75 alt="..." >
+								</div>
+								<div class="carousel-item">
+									<img src="images/corouselimg/sports.jpg"
+										class="d-block w-100 h-75" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images\corouselimg\fashionshow.jpg"
+										class="d-block w-100 h-75" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images\corouselimg\aagman.jpg"
+										class="d-block w-100 h-75" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images\corouselimg\spandhan1.jpg"
+										class="d-block w-100 h-75" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="images/corouselimg/sports.jpg"
+										class="d-block w-100 h-75" alt="...">
+								</div>
+								<div class="carousel-item ">
+									<img src="images\corouselimg\fashionshow.jpg"
+										class="d-block w-100 h-75" alt="...">
+								</div>
 
-		</section>
-					
-					
+							</div>
+							<button class="carousel-control-prev" type="button"
+								data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button"
+								data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+
+					</section>
+
+
 					<h4 class="h4 center">
 						We Have Completed <span>150+ Club Activity </span> Succesfully
 					</h4>
@@ -601,15 +614,27 @@
 						<div class="h4 center">Our Active Members</div>
 					</div>
 				</div>
-			</div>
+				</div>
+				<a href="#hom" class="text-decoration-none ">
+				<button class="">
+					<i class="fa-2x fa-solid fa-up-long"></i>
+				</button>
+				
+				
+			</a>
+			
 		</section>
 
 		<footer>
-<%@include file="/components/footer.jsp" %>
+			
 
-			</footer>
 
-			<!-- End of .container -->
+
+			<%@include file="/components/footer.jsp"%>
+
+		</footer>
+
+		<!-- End of .container -->
 
 		</footer>
 	</main>

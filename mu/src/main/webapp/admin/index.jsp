@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+		<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +9,8 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <%-- <%@include file="/components/allcss.jsp" %>
- --%><link rel="stylesheet" href="/assignment.css" />
+ --%>
+ <link rel="stylesheet" href="../assignment.css" />
 <style type="text/css">
 .paint-card {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -17,9 +20,14 @@
 </head>
 <body style="background-color: #FFF7F4; padding: 40px 15px;">
 	<%@include file="adminnavbar.jsp"%>
+	
+	<c:if test="${ empty adminObj}">
+		<c:redirect url="../admin.jsp"></c:redirect>
+	</c:if>
+	
 
 	<div class="container p-5">
-		<p class="text-center fs-3">Admin Dashboard</p>
+		<p class="text-center fs-4">Admin Dashboard</p>
 
 		<div class="row">
 			<div class="col-md-4 " >

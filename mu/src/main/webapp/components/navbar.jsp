@@ -57,7 +57,7 @@
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item "><a class="nav-link text-dark "
 						aria-current="page" href="admin.jsp" target="_blank"><i
-							class="fa-solid fa-building-columns"></i> admine</a></li>
+							class="fa-solid fa-building-columns"></i> admin</a></li>
 					<li class="nav-item"><a class="nav-link text-dark"
 						aria-current="page" href="studentLogin.jsp" target="_blank"><i
 							class="fa-solid fa-graduation-cap"></i> Student</a></li>

@@ -73,12 +73,12 @@
 						style="border: none; padding: 7px 7px; border-radius: 8px; border: 2px solid rgb(235, 73, 14);"
 						class="btn  dropdown-toggle" type="button"
 						id="dropdownMenuButton1" data-bs-toggle="dropdown"
-						aria-expanded="false">Dropdown</button>
+						aria-expanded="false">ADMIN</button>
 					
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
 						>
 						<li><a class="dropdown-item  " href="#">Change Password</a></li>
-						<li><a class="dropdown-item" href="#">Logout</a></li>
+						<li><a class="dropdown-item" href="../adminLogout">Logout</a></li>
 					</ul>
 
 
