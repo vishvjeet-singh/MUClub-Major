@@ -1,4 +1,4 @@
-package com.admin.servlet;
+package com.user.servlet;
 
 import java.io.IOException;
 
@@ -9,31 +9,32 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.dao.UserDao;
+import com.db.DBConnection;
 import com.entity.user;
 
-
-
-
-@WebServlet("/adminLogin")
-public class AdmineLogin extends HttpServlet {
+@WebServlet("/userLogin")
+public class UserLogin  extends HttpServlet{
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
-		try {
+try {
 			
 			String email=req.getParameter("email");
 			String password=req.getParameter("password");
 			
 			HttpSession session=req.getSession();
 			
-			if ("admin@gmail.com".equals(email)&& "admin".equals(password)) {
+			UserDao dao =new UserDao(DBConnection.getconn());
+			user User =dao.login(email, password);
 			
-				session.setAttribute("adminObj", new user());
-				resp.sendRedirect("admin/index.jsp");
+			if (User!=null) {
+			
+				session.setAttribute("userObj", User);
+				resp.sendRedirect("index.jsp");
 			}else {
 				session.setAttribute("errMsg", "Invalid email & password");
-				resp.sendRedirect("admin.jsp");
+				resp.sendRedirect("studentLogin.jsp");
 				
 			}
 			
@@ -43,11 +44,8 @@ public class AdmineLogin extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		
-		
 	}
 	
-	 
 	
 
 }

@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="assignment.css" />
 <%@include file="components/allcss.jsp"%>
 
+
 </head>
 
 <body>
@@ -73,9 +74,7 @@
 					href="https://docs.google.com/forms/d/e/1FAIpQLScSrw6Xf-rfHppqUloRok2K4wX6T5Q0dA1HodazD-JHrfmQhA/viewform"
 					style="text-decoration: none"><button class="h5 ">Register
 						Now</button></a>
-
-
-			</div>
+						</div>
 			<div class="icon-box">
 				<a href="https://www.facebook.com/MITMDS/"> <img
 					src="images\Icons\Logos\facebook-fillfacebook.png" alt="facebook"></a>

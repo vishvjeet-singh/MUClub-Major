@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-		<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	
 <!DOCTYPE html>
 <html>
@@ -21,12 +21,14 @@
 <body style="background-color: #FFF7F4; padding: 40px 15px;">
 	<%@include file="adminnavbar.jsp"%>
 	
-	<c:if test="${ empty adminObj}">
-		<c:redirect url="../admin.jsp"></c:redirect>
-	</c:if>
 	
+	<c:choose>
+    <c:when test="${empty adminObj}">
+		<c:redirect url="../admin.jsp"></c:redirect>
+    </c:when>
+    <c:otherwise>
 
-	<div class="container p-5">
+<div class="container p-5">
 		<p class="text-center fs-4">Admin Dashboard</p>
 
 		<div class="row">
@@ -81,6 +83,11 @@
 		</div>
 	</div>
 
+
+    </c:otherwise>
+</c:choose>
+
+	
 
 </body>
 </html>

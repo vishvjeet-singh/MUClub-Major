@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page isELIgnored="false"%>
+
 <html>
 <head>
 <meta charset="ISO-8859-1">
@@ -54,23 +57,50 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item "><a class="nav-link text-dark "
-						aria-current="page" href="admin.jsp" target="_blank"><i
-							class="fa-solid fa-building-columns"></i> admin</a></li>
-					<li class="nav-item"><a class="nav-link text-dark"
-						aria-current="page" href="studentLogin.jsp" target="_blank"><i
-							class="fa-solid fa-graduation-cap"></i> Student</a></li>
-					<li class="nav-item"><a class="nav-link text-dark"
-						aria-current="page" href="facultyLogin.jsp" target="_blank"><i
-							class="fa-solid fa-chalkboard-user"></i> faculty</a></li>
-					<li class="nav-item"><a class="nav-link text-dark"
-						aria-current="page" href="index.jsp">enroll</a></li>
-					<li class="nav-item"><a class="nav-link text-dark "
-						aria-current="page" href="index.jsp">home</a></li>
-					<li class="nav-item"><a class="nav-link text-dark"
-						aria-current="page" href="index.jsp#card">clubs</a></li>
-		
+
+					<c:choose>
+						<c:when test="${empty userObj}">
+							<li class="nav-item "><a class="nav-link text-dark "
+								aria-current="page" href="admin.jsp" target="_blank"><i
+									class="fa-solid fa-building-columns"></i> admin</a></li>
+							<li class="nav-item"><a class="nav-link text-dark"
+								aria-current="page" href="studentLogin.jsp" target="_blank"><i
+									class="fa-solid fa-graduation-cap"></i> Student</a></li>
+							<li class="nav-item"><a class="nav-link text-dark"
+								aria-current="page" href="facultyLogin.jsp" target="_blank"><i
+									class="fa-solid fa-chalkboard-user"></i> faculty</a></li>
+
+							<li class="nav-item"><a class="nav-link text-dark "
+								aria-current="page" href="index.jsp">home</a></li>
+							<li class="nav-item"><a class="nav-link text-dark"
+								aria-current="page" href="index.jsp#card">clubs</a></li>
+							
+
+
+						</c:when>
+						<c:otherwise>
+							<li class="nav-item"><a class="nav-link text-dark"
+								aria-current="page" href="index.jsp">Club Registration</a></li>
+							<li class="nav-item"><a class="nav-link text-dark"
+								aria-current="page" href="index.jsp">View Club Registration</a></li>
+
+							<li class="nav-item dropdown "><a
+								class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdown"
+								role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+									class="fa-solid fa-circle-user "></i> ${userObj.fullname} </a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">Change Password</a></li>
+									<li><a class="dropdown-item" href="userLogout">Logout</a></li>
+
+								</ul></li>
+						</c:otherwise>
+					</c:choose>
+
+					
+				</ul>
 			</div>
 		</div>
 	</nav>

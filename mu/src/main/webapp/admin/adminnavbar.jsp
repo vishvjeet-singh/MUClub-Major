@@ -77,7 +77,6 @@
 					
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
 						>
-						<li><a class="dropdown-item  " href="#">Change Password</a></li>
 						<li><a class="dropdown-item" href="../adminLogout">Logout</a></li>
 					</ul>
 
