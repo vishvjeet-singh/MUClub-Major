@@ -30,7 +30,7 @@ public class AdmineLogin extends HttpServlet {
 			if ("admin@gmail.com".equals(email)&& "admin".equals(password)) {
 			
 				session.setAttribute("adminObj", new user());
-				resp.sendRedirect("admin/index.jsp");
+				resp.sendRedirect("admin/index1.jsp");
 			}else {
 				session.setAttribute("errMsg", "Invalid email & password");
 				resp.sendRedirect("admin.jsp");

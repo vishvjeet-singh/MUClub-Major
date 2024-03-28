@@ -7,9 +7,9 @@
 <head>
 <meta charset="ISO-8859-1">
 
-<%@include file="allcss.jsp"%>
-<link rel="stylesheet" href="../assignment.css" />
-<title>navbar</title>
+<%-- <%@include file="allcss.jsp"%>
+ --%><!-- <link rel="stylesheet" href="/assignment.css" />
+ --><title>navbar</title>
 <style>
 .navbar-light .navbar-nav .nav-link {
 	text-transform: uppercase;
@@ -71,7 +71,7 @@
 									class="fa-solid fa-graduation-cap"></i> Student</a></li>
 							<li class="nav-item"><a class="nav-link text-dark"
 								aria-current="page" href="facultyLogin.jsp" target="_blank"><i
-									class="fa-solid fa-chalkboard-user"></i> faculty</a></li>
+									class="fa-solid fa-chalkboard-user"></i> Club President</a></li>
 
 							<li class="nav-item"><a class="nav-link text-dark "
 								aria-current="page" href="index.jsp">home</a></li>

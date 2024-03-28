@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,7 @@
 <title>Insert title here</title>
 
 <%@include file="/components/allcss.jsp"%>
-<link rel="stylesheet" href="../assignment.css" />
+<link rel="stylesheet" href="/assignment.css" />
 <title>navbar</title>
 <style>
 .navbar-light .navbar-nav .nav-link {
@@ -59,13 +60,13 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link text-dark"
-						aria-current="page" href="admin.jsp" target="_blank"><i
+						aria-current="page" href="index1.jsp" ><i
 							class="fa-solid fa-house-chimney-user"></i> Home</a></li>
 					<li class="nav-item"><a class="nav-link text-dark "
-						aria-current="page" href="studentLogin.jsp" target="_blank"><i
+						aria-current="page" href="president.jsp" ><i
 							class="fa-solid fa-chalkboard-user"></i> President</a></li>
 					<li class="nav-item"><a class="nav-link text-dark "
-						aria-current="page" href="facultyLogin.jsp" target="_blank"><i
+						aria-current="page" href="facultyLogin.jsp" ><i
 							class="fa-solid fa-graduation-cap"></i> Students</a></li>
 				</ul>
 				<div class="dropdown text-center">
@@ -82,6 +83,8 @@
 
 
 				</div>
+				
+				
 			</div>
 
 

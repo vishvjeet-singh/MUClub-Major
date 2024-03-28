@@ -13,8 +13,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<%@include file="components/allcss.jsp"%>
-<link rel="stylesheet" href="assignment.css" />
+<%-- <%@include file="components/allcss.jsp"%>
+ --%><link rel="stylesheet" href="assignment.css" />
 <link rel="icon" type="image/x-icon" href="images/Icons/mulogo.png">
 
 <style type="text/css">
@@ -25,6 +25,7 @@
 </style>
 
 </head>
+
 <body style="background-color: #FFF7F4">
 	<%@include file="components/navbar.jsp"%>
 	<div class="container p-5   " style="margin-top: 80px">
@@ -64,15 +65,13 @@
 									name="password" type="password" class="form-control">
 							</div>
 							<button type="submit" class="btn  text-black col-md-12"
-								style="border: #FF5300; border-radius: 6px; border-style: inset;">Register</button>
+								style="border: #FF5300; border-radius:6px; border-style: inset;">Register</button>
 						</form>
 						<br>
-						<p class="text-center">
+						<p class="text-center"> Already have an account ?
 						 <a href="studentLogin.jsp"
 								class="  link-info text-decoration-none">Login</a>
 						</p>
-
-
 
 					</div>
 				</div>

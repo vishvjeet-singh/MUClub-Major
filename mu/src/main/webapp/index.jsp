@@ -1,8 +1,9 @@
 <%@page import="com.db.DBConnection"%>
 <%@page import="java.sql.Connection"%>
-<html lang="en">
+<html>
 
 <head>
+<meta charset="ISO-8859-1">
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,48 +11,16 @@
 <!-- Font Awesome Icons -->
 <link rel="icon" type="image/x-icon" href="images/Icons/mulogo.png">
 <link rel="stylesheet" href="assignment.css" />
-<%@include file="components/allcss.jsp"%>
-
+<script async src="https://tally.so/widgets/embed.js"></script>
+<%-- <%@include file="components/allcss.jsp"%>
+ --%>
 
 </head>
 
 <body>
+
 	<%@include file="components/navbar.jsp"%>
 
-
-	<header>
-		<!-- <div >
-			<img src="images/Icons/mulogo1.png" alt="digiency"
-				class="herader_logo" style="height: 50px;" />
-		</div>
-		<nav>
-			<div>
-				<a href="#hom" style="text-decoration: none">Home</a>
-			</div>
-			<div>
-				<a href="#abt" style="text-decoration: none">About us</a>
-			</div>
-			<div>
-				<a href="#card" style="text-decoration: none">Clubs</a>
-			</div>
-			<div>
-				<a href="#activity" style="text-decoration: none">Activity</a>
-			</div>
-			<div>
-				<a href="#abt" style="text-decoration: none">Contact Us</a>
-			</div>
-		</nav>
-
-		<div class="center light">
-			<img src="images\05_Home Page-iPhone 11 Pro\Icon\Outline\Light.png"
-				alt="Light" class="headerimg" />
-		</div>
-		<div class="right menubar">
-			<img src="images\05_Home Page-iPhone 11 Pro\Vector.png" alt="vector"
-				class="headerimg " />
-		</div> -->
-
-	</header>
 	<main>
 		<section id="hom" class="poster">
 			<div class="poster-div" style="text-align: center">
@@ -70,11 +39,10 @@
 					students to express their thoughts, feelings, creativity through
 					various forms and achieve youth development through its programs.</h6>
 
-				<a
-					href="https://docs.google.com/forms/d/e/1FAIpQLScSrw6Xf-rfHppqUloRok2K4wX6T5Q0dA1HodazD-JHrfmQhA/viewform"
-					style="text-decoration: none"><button class="h5 ">Register
-						Now</button></a>
-						</div>
+				<a target="_blank" href="chat.jsp" style="text-decoration: none"><button class="h5 ">Join
+						MU</button></a>
+			</div>
+
 			<div class="icon-box">
 				<a href="https://www.facebook.com/MITMDS/"> <img
 					src="images\Icons\Logos\facebook-fillfacebook.png" alt="facebook"></a>
@@ -83,10 +51,10 @@
 				<a href=""><img src="images\Icons\Logos\skype-fillskype.png"
 					alt="skype"></a> <a href="https://twitter.com/mumandsaur?lang=en"><img
 					src="images\Icons\Logos\twitter-filltwitter.png" alt="twitter"></a>
+
 			</div>
-
+		
 		</section>
-
 
 
 
@@ -103,7 +71,7 @@
 					</div>
 					<div class="about-content">
 						<div class="content">
-							<div class="Us h6 center">About Us</div>
+							<div class="Us h6 center">Contact Us</div>
 							<h4 class="h4 center">
 								We Are <span>Making Future Better</span> For Everyone
 							</h4>
@@ -115,8 +83,11 @@
 								More than 10 clubs.
 							</h6>
 
+							<a style="text-decoration: none"
+								href="#tally-open=wb7LV6&tally-emoji-text=&#128075;&tally-emoji-animation=wave">
+								<button class="h5 center">Contact Us</button>
 
-							<button class="h5 center">Contact Us</button>
+							</a>
 
 						</div>
 					</div>
@@ -613,20 +584,25 @@
 						<div class="h4 center">Our Active Members</div>
 					</div>
 				</div>
-				</div>
-				<a href="#hom" class="text-decoration-none ">
-				<button class="">
-					<i class="fa-2x fa-solid fa-up-long"></i>
-				</button>
 				
-				
-			</a>
+			</div>
 			
+			
+			
+			
+
 		</section>
-
-		<footer>
+		
+<!-- <div class=" float-right  ">
 			
+			<a href="#hom" class="text-decoration-none  ">
+					<i class="fa-2x fa-solid fa-up-long "></i>
 
+
+			</a>
+			</div> -->
+			
+		<footer>
 
 
 			<%@include file="/components/footer.jsp"%>
