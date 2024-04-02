@@ -14,11 +14,11 @@ import com.db.DBConnection;
 import com.entity.president;
 
 @WebServlet("/addPresident")
-public class AddPresident extends HttpServlet {
+public class updatePresident extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+		
 		try {
 			String fullName = req.getParameter("fullname");
 			String Dipartment = req.getParameter("dip");
@@ -27,14 +27,16 @@ public class AddPresident extends HttpServlet {
 			String Email = req.getParameter("email");
 			String MobNo = req.getParameter("mobno");
 			String Password = req.getParameter("password");
+			
+			int id =Integer.parseInt(req.getParameter("id"));
 
-			president p = new president(fullName, Dipartment, Designation, club, Email, MobNo, Password);
+			president p = new president(id, fullName, Dipartment, Designation, club, Email, MobNo, Password);
             PresidentDao dao=new PresidentDao(DBConnection.getconn());
             HttpSession session= req.getSession();
             
 			
 			if (dao.registerPresident(p)) {
-				session.setAttribute("sucMsg", "Club Head Added Successfully..");
+				session.setAttribute("sucMsg", "Club Head Updated Successfully..");
 				resp.sendRedirect("admin/president.jsp");
 
 			}else {
@@ -46,6 +48,10 @@ public class AddPresident extends HttpServlet {
 			e.printStackTrace();
 		}
 
+		
+		
 	}
+	
+	
 
 }

@@ -15,8 +15,21 @@ public class president {
 		// TODO Auto-generated constructor stub
 	}
 	public president(String fullname, String dipartment, String designation, String club, String email, String mobNo,
-			String password) {
+			String password ) {
 		super();
+		this.fullname = fullname;
+		this.dipartment = dipartment;
+		this.designation = designation;
+		this.club = club;
+		this.email = email;
+		this.mobNo = mobNo;
+		this.password = password;
+	}
+	
+	public president(int id, String fullname, String dipartment, String designation, String club, String email,
+			String mobNo, String password) {
+		super();
+		this.id = id;
 		this.fullname = fullname;
 		this.dipartment = dipartment;
 		this.designation = designation;

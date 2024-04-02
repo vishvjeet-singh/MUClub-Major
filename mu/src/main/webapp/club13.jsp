@@ -24,7 +24,7 @@ padding: 25px 15px;
 <body>
 	<%@include file="components/navbar.jsp"%>
 	 <!-- <img src="logomu.png" alt="image" > -->
-	 <div class="bg">
+	 <div class="bg" style="margin-top: 80px">
 	 
 	 
    <h3> <b>Outreach Fitness Club (OFC):</b> </h3>

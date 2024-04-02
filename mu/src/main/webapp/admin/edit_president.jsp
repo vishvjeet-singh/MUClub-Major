@@ -31,11 +31,11 @@
 	<div class="container-fluid ">
 		<div class="row">
 
-			<div class="col-md-4 ">
+			<div class="col-md-4 offset-md-4">
 				<div class="card paint-card">
 					<div class="card-body">
 
-						<p class="fs-3 text-center">Add Club President</p>
+						<p class="fs-3 text-center">Edit Club President Details</p>
 
 						<c:if test="${not empty sucMsg }">
 							<p class="text-center text-success fs-5 ">${sucMsg}</p>
@@ -46,25 +46,32 @@
 							<c:remove var="errMsg" scope="session" />
 						</c:if>
 
-						<form action="../addPresident " method="post">
+						<%
+						int id = Integer.parseInt(request.getParameter("id"));
+						PresidentDao dao2 = new PresidentDao(DBConnection.getconn());
+					    president p=dao2.getPresidentById(id);
+						%>
+
+
+						<form action="../updatePresident " method="post">
 							<div class="mb-3">
 								<label class="form-label">Full Name</label> <input type="text"
-									required name="fullname" class="form-control">
+									required name="fullname" class="form-control" value=" <%=p.getFullname()%> ">
 							</div>
 
 							<div class="mb-3">
 								<label class="form-label">Dipartment</label> <input type="test"
-									required name="dip" class="form-control">
+									required name="dip" class="form-control" value=" <%=p.getDipartment()%> " >
 							</div>
 
 							<div class="mb-3">
 								<label class="form-label">Designation</label> <input required
-									name="designation" type="text" class="form-control">
+									name="designation" type="text" class="form-control" value=" <%=p.getDesignation()%> ">
 							</div>
 							<div class="mb-3">
 								<label class="form-label">Club</label> <select name="club"
 									required class="form-control">
-									<option>--select--</option>
+									<option><%=p.getClub()%> </option>
 
 									<%
 									ClubDao dao = new ClubDao(DBConnection.getconn());
@@ -83,74 +90,28 @@
 
 							<div class="mb-3">
 								<label class="form-label">Email</label> <input type="text"
-									required name="email" class="form-control">
+									required name="email" class="form-control" value=" <%=p.getEmail()%> ">
 							</div>
 
 							<div class="mb-3">
 								<label class="form-label">Mob No</label> <input type="text"
-									required name="mobno" class="form-control">
+									required name="mobno" class="form-control" value=" <%=p.getMobNo()%> ">
 							</div>
 
 							<div class="mb-3">
 								<label class="form-label">Password</label> <input required
-									name="password" type="password" class="form-control">
+									name="password" type="text" class="form-control"value=" <%=p.getPassword()%> ">
 							</div>
-
+                                 <input type="hidden" name="id" <%=p.getId() %>>
+                                 
 							<button
 								style="border: none; padding: 7px 7px; border-radius: 8px; border: 2px solid rgb(235, 73, 14);"
-								type="submit" class="btn ">Submit</button>
+								type="submit" class="btn col-md-12 ">Update</button>
 						</form>
 					</div>
 				</div>
 			</div>
 
-
-			<div class="col-md-8 ">
-				<div class="card paint-card">
-					<div class="card-body">
-						<p class="fs-3 text-center">President Details</p>
-						<table class="table">
-							<thead>
-								<tr>
-									<th scope="col">Full Name</th>
-									<th scope="col">Designation</th>
-									<th scope="col">Club</th>
-									<th scope="col">Email</th>
-									<th scope="col">Action</th>
-								</tr>
-							</thead>
-														
-							<tbody>
-								<%
-								PresidentDao dao2 = new PresidentDao(DBConnection.getconn());
-								List<president> list1 = dao2.getAllPresident();
-								for (president p : list1) {
-								%>
-
-								<tr>
-									<td><%=p.getFullname()%></td>
-									<td><%=p.getDesignation()%></td>
-									<td><%=p.getClub()%></td>
-									<td><%=p.getEmail()%></td>
-									<td>
-									
-									<a href="edit_president.jsp?id=<%=p.getId() %>" class="btn btn-sm btn-primary">Edit</a>
-									<a href="#" class="btn btn-sm btn-danger">Delete</a>
-									
-									</td>
-
-
-								</tr>
-
-								<%
-								}
-								%>
-
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
 
 
 
